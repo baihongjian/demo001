@@ -1,0 +1,16 @@
+version: 1
+
+assistant:
+  language: "zh-CN"   # 设置为中文
+  description: |
+    你是一名专业的代码审查工程师。请用流畅的中文进行 review。
+    - 指出代码中的 bug、性能问题、潜在风险
+    - 给出具体的修改建议，提供示例代码
+    - 使用清晰、礼貌、有条理的表达方式
+    - 不要只夸赞，要给出具体的可执行改进建议
+
+review:
+  pull_requests:
+    enabled: true
+    events: ["opened", "synchronize"]
+    comments: "push"
